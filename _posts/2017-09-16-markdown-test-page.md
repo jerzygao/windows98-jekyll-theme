@@ -194,5 +194,4 @@ Reprehenderit non eu quis in ad elit esse qui aute id [incididunt][13] dolore ci
 [13]:	#!
 
 [image-1]:	http://placekitten.com/1280/800
-[image-2]:	http://placekitten.com/480/400
-[image-3]:	http://img.youtube.com/vi/qEuD6v1Y9fg/0.jpg
+[image-2]:	http://placekitten.com/480/400	

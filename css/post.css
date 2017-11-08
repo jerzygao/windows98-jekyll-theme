@@ -39,6 +39,11 @@ body {
     font-family: sans-serif, serif, monospace;
     font-size: 13px
 }
+.post-page{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 .post_preview {
     margin-top: 10px;
     width: 100%;
