@@ -1,0 +1,37 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Gaozhe'blog
+email: jerzygao@qq.com
+description: Gaozhe'blog
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # http://www.54gaozhe.com # the base hostname & protocol for your site
+twitter_username:
+github_username:
+weibo_title: Weibo：
+weibo_name: 敲代码的高双喜
+weibo_url: http://weibo.com/54gaozhe #微博个性域名
+weixin_title: Weixin：
+weixin_mpname: 敲代码的高双喜 #微信公众号
+weixin_mplink: http://mp.weixin.qq.com/s?__biz=MzI5MTUzNzQxNQ==&mid=2247483871&idx=1&sn=51d064eb2cca7486c58546c917477fef&chksm=ec0e56b7db79dfa12ce501f74cfa65b7afa37cd22e1ece4ad217fd0d8b01957a8e028b40e9e6#rd #公众号连接
+
+# https://jekyllrb.com/docs/pagination/
+paginate: 5
+# specify the destination of the pagination pages
+paginate_path: "/blog/:num"
+
+excerpt_separator:  '<!-- more -->'
+
+gems: [jekyll-paginate, kramdown]
+# Build settings
+# Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    disable : true

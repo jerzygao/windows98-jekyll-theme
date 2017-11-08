@@ -1,0 +1,197 @@
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	overflow: hidden;
+}
+
+.desktop {
+	height: 100%;
+	position: relative;
+}
+.taskbar {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 28px;
+	display: flex;
+	flex: 1;
+}
+.taskbar > * {
+	display: inline-block;
+}
+.taskbar button {
+	height: 22px;
+	margin: 3px;
+	padding: 2px !important;
+	line-height: 14px;
+}
+.taskbar button * {
+	vertical-align: middle;
+}
+.tasks {
+	display: flex;
+	flex: 1;
+}
+.task {
+	max-width: 200px;
+	width: 50%;
+	text-align: left;
+}
+.task img {
+	padding-right: 4px;
+}
+.desktop,
+.taskbar,
+.start-button,
+.tasks,
+.task,
+.window,
+.window-titlebar,
+.window-title {
+	cursor: default;
+	user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+.window-titlebar .icon {
+	vertical-align: bottom;
+}
+.window-content {
+	margin: 0;
+	padding: 0;
+}
+.desktop-left {
+	width: 10%;
+	height: 90%;
+	display: block;
+	float: left;
+	position: absolute;
+	top: 2%;
+}
+.desktop-right {
+	width: 90%;
+	height: 95%;
+	display: block;
+	float: right;
+
+}
+.desktop-right .window{
+	position: relative;
+	left: 5px;
+	width: 90%;
+	height: 95%;
+	top: 2%;
+	display: block;
+}
+.window .page-frame{
+	background: white;
+	width: 99%;
+	height: 94%;
+}
+.desktop-icon {
+	display: table-row;
+	vertical-align: bottom; 
+	margin: 5px;
+	text-align: center;
+	width: 100px; 
+	height: 80px;
+}
+.desktop-icon .icon-wrapper {
+	display: inline-block;
+	vertical-align: bottom; /* with inline-block, always */
+	position: relative;
+}
+.desktop-icon .title {
+	line-height: 1;
+	max-height: 2em;
+	text-overflow: ellipsis;
+}
+
+/* Fix dragging things (like windows) over iframes */
+.drag iframe {
+	pointer-events: none;
+}
+
+.marquee {
+	pointer-events: none;
+}
+
+.menus {
+	display: flex;
+	flex: 0 0 auto;
+	background: #c0c0c0;
+}
+.menu-container {
+	position: relative;
+}
+.menu-popup {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 4;
+	box-sizing: border-box;
+}
+.menu-popup-table {
+	border-collapse: collapse;
+}
+.menu-item {
+	white-space: nowrap;
+}
+.menu-hr {
+	display: block !important;
+	height: 0;
+	width: auto;
+}
+.menu-hotkey {
+	display: inline !important;
+}
+.menu-item-checkbox-area,
+.menu-item-submenu-area {
+	min-width: 16px;
+}
+.menu-item-checkbox-area,
+.menu-item-submenu-area {
+	text-align: center;
+}
+
+.window-title {
+	display: inline-block !important;
+	margin: 0;
+	padding: 0;
+}
+.window-close-button {
+	display: inline-block !important;
+	float: right;
+	width: 13px;
+	height: 11px;
+}
+.window-close-button:before {
+	content: '×';
+	position: relative;
+}
+
+.window-content .button-group {
+	width: 85px;
+}
+.window-content .button-group > button {
+	width: 95%;
+	padding: 3px 5px;
+}
+
+::before, ::after {
+	pointer-events: none;
+}
+
+.cursor-bully * {
+	cursor: inherit !important;
+}
+.loading-program * {
+	cursor: progress;
+}

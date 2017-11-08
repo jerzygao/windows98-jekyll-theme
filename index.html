@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Gaozhe's blog</title>
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <link href="css/classic.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="images/icons/windows-update-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="images/icons/windows-update-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="images/icons/windows-update-48x48.png" sizes="48x48" type="image/png">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+
+<body>
+    <div class="desktop">
+        <div class="desktop-left">
+            <div class="desktop-icon" draggable="true">
+                <div class="icon-wrapper">
+                    <img class="icon" draggable="false" src="images/icons/my-computer-32x32.png">
+                    <img class="icon selection-effect" draggable="false" src="images/icons/my-computer-32x32.png">
+                </div>
+                <div class="title">Categories</div>
+            </div>
+            <div class="desktop-icon" draggable="true">
+                <div class="icon-wrapper">
+                    <img class="icon" draggable="false" src="images/icons/my-documents-folder-32x32.png">
+                    <img class="icon selection-effect" draggable="false" src="images/icons/my-documents-folder-32x32.png">
+                </div>
+                <div class="title">About me</div>
+            </div>
+            <div class="desktop-icon" draggable="true">
+                <div class="icon-wrapper">
+                    <img class="icon" draggable="false" src="images/icons/internet-explorer-32x32.png">
+                    <img class="icon selection-effect" draggable="false" src="images/icons/internet-explorer-32x32.png">
+                </div>
+                <div class="title">Internet Explorer</div>
+            </div>
+            <div class="desktop-icon" draggable="true">
+                <div class="icon-wrapper">
+                    <img class="icon" draggable="false" src="images/icons/doc-32x32.png">
+                    <img class="icon selection-effect" draggable="false" src="images/icons/doc-32x32.png">
+                </div>
+                <div class="title">Blog.txt</div>
+            </div>
+        </div>
+        <div class="desktop-right">
+            <div class="window" touch-action="none">
+                <div class="window-titlebar" touch-action="none">
+                    <img class="icon" draggable="false" src="images/icons/notepad-16x16.png">
+                    <span class="window-title">Blog.txt - Notepad</span>
+                    <button class="window-close-button window-button button"></button>
+                </div>
+                <div class="window-content">
+                    <iframe allowfullscreen="" src="/blog/index.html" class="page-frame">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="taskbar">
+        <button class="start-button" title="Click here to begin.">
+            <img src="images/start.png" /><b>Start</b>
+        </button>
+        <div class="tasks">
+            <button class="task button"><img class="icon" draggable="false" src="images/icons/notepad-16x16.png"><span class="title">Blog.txt - Notepad</span></button>
+        </div>
+    </div>
+    <script src="js/pep.js"></script>
+    <script src="js/jquery.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+	<link rel="stylesheet" href="/css/post.css">
+	<link rel="stylesheet" href="/css/layout.css">
+	<link rel="stylesheet" href="/css/classic.css">
+	<link rel="stylesheet" href="/css/atom-one-light.css">
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.xml " | prepend: site.baseurl | prepend: site.url }}">
+	<script src="/blog/js/highlight.pack.js "></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+	<div class="menus" touch-action="none">
+		<div class="menu-container">
+			<div class="menu-button file-menu-button" tabindex="-1">
+				<a class="menu-button-link" href="/blog/index.html"> <span class="menu-hotkey">I</span>ndex</a>
+			</div>
+		</div>
+		<div class="menu-container">
+			<div class="menu-button edit-menu-button" tabindex="-1">
+				{% if page.previous.url %}
+				<a class="menu-button-link" href="{{page.previous.url}}"><span class="menu-hotkey">P</span>revious</a>
+				{% else %}
+				<span class="menu-hotkey">P</span>revious
+				{% endif %}
+			</div>
+		</div>
+		<div class="menu-container">
+			<div class="menu-button search-menu-button" tabindex="-1">
+				{% if page.next.url %}
+				<a class="menu-button-link" href="{{page.next.url}}"><span class="menu-hotkey">N</span>ext</a>
+				{% else %}
+				<span class="menu-hotkey">N</span>ext
+				{% endif %}
+			</div>
+		</div>
+		<div class="menu-container">
+			<div class="menu-button help-menu-button" tabindex="-1"><span class="menu-hotkey">S</span>earch</div>
+		</div>
+	</div>
+	<div class="post-content">
+		{{ content }}
+	</div>
+	<script src="/blog/js/code-line-num.js "></script>
+</body>
