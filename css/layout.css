@@ -74,6 +74,7 @@ html, body {
 	float: left;
 	position: absolute;
 	top: 2%;
+	left: 5px;
 }
 .desktop-right {
 	width: 90%;
