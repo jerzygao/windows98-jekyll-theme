@@ -36,7 +36,7 @@
                 </div>
                 <div class="title">Internet Explorer</div>
             </div>
-            <div class="desktop-icon shortcut selected focused" draggable="true">
+            <div id="blog-desktop-icon" class="desktop-icon selected focused" draggable="true">
                 <div class="icon-wrapper">
                     <img class="icon" draggable="false" src="images/icons/doc-32x32.png">
                     <img class="icon selection-effect" draggable="false" src="images/icons/doc-32x32.png">
@@ -45,11 +45,11 @@
             </div>
         </div>
         <div class="desktop-right">
-            <div class="window" touch-action="none">
+            <div id="blog-window" class="window" touch-action="none">
                 <div class="window-titlebar" touch-action="none">
                     <img class="icon" draggable="false" src="images/icons/notepad-16x16.png">
                     <span class="window-title">Blog.txt - Notepad</span>
-                    <button class="window-close-button window-button button"></button>
+                    <button id="blog-window-close" class="window-close-button window-button button"></button>
                 </div>
                 <div class="window-content">
                     <iframe allowfullscreen="" src="/blog/index.html" class="page-frame">
@@ -63,11 +63,11 @@
             <img src="images/start.png" /><b>Start</b>
         </button>
         <div class="tasks">
-            <button class="task button"><img class="icon" draggable="false" src="images/icons/notepad-16x16.png"><span class="title">Blog.txt - Notepad</span></button>
+            <button id="blog-window-task" class="task button"><img class="icon" draggable="false" src="images/icons/notepad-16x16.png"><span class="title">Blog.txt - Notepad</span></button>
         </div>
     </div>
-    <script src="js/pep.js"></script>
-    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
 </body>
 
 </html>

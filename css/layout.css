@@ -86,7 +86,7 @@ html, body {
 .desktop-right .window{
 	position: relative;
 	left: 5px;
-	width: 90%;
+	width: 95%;
 	height: 95%;
 	top: 2%;
 	display: block;
