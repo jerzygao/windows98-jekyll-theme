@@ -119,24 +119,24 @@ html, body {
 	padding-left: 6px;
 }
 
-.window-list.left .folder-list{
+.folder-list{
 	list-style: none;
 	padding:0;
 	background: transparent url(../images/icons/pixel-alt.png) repeat-y 15px 0;
 }
-.window-list.left .folder-list li{
+.folder-list li{
 	padding: 0 0 0 2px;
 }
-.window-list.left .folder-list ul{
+.folder-list ul{
 	list-style: none;
 	padding:0;
 }
-.window-list.left .folder-list li ul li {
+.folder-list li ul li {
 	background: transparent url(../images/icons/pixel-alt.png) repeat-x 0 8px;
 	margin: 4px 0 4px 13px;
 	padding: 0 0 0 20px
 }
-.window-list.left .folder-list li a{
+.folder-list li a{
 	background: white;
 	display: block;
 	text-decoration: none;
@@ -144,6 +144,7 @@ html, body {
 }
 .window-list.right{
 	width: 67%;
+	overflow: hidden;
 }
 .window-body{
 	background: #c0c0c0;
@@ -169,6 +170,10 @@ html, body {
 	background: white;
 	width: 99%;
 	height: 94%;
+}
+.file-list-content{
+	height: 100%;
+	overflow: scroll;
 }
 .desktop-icon {
 	display: table-row;

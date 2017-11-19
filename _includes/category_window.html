@@ -29,7 +29,7 @@
                         {% if tag.child %}
                         <ul>
                             {% for child in tag.child %}
-                                <li><a href="#" title="{{child.title}}"><img src="{{child.icon_url}}"> {{child.title}}</a></li>
+                                <li><a href="/{{child.category}}" title="{{child.title}}"><img src="{{child.icon_url}}"> {{child.title}}</a></li>
                             {% endfor %}
                         </ul>    
                         {% endif %}
@@ -38,7 +38,7 @@
             </ul>
         </div>
         <div class="window-list right">
-            <!-- <iframe allowfullscreen="" src="/blog/index.html" class="page-frame"> -->
+            <iframe allowfullscreen="" src="/archives.html" class="page-frame">
             </iframe>
         </div> 
     </div>

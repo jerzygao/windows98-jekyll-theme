@@ -1,6 +1,6 @@
 ---
 layout: post
-category: life
+category: movies
 title:  《血路狂飙》暴力美学的猎奇盛宴
 tags: [影视]
 ---

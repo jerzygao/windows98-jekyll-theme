@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Markdown Test Page"
+category: coding
 tags: tag1 tag3
 ---
 

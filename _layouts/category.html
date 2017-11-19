@@ -1,0 +1,16 @@
+---
+layout: file-explorer
+---
+
+
+{% for post in site.posts %}
+{% for cat in post.categories %}
+{% if cat == page.category %}
+
+<li><a href="{{site.url}}{{site.baseurl}}{{post.url}}" title="{{ post.title }}"><img src="../images/icons/notepad-file-16x16.png"> {{ post.date | date: "%b %-d, %Y" }} {{ post.title }}
+</a></li>
+
+{% endif %}
+{% endfor %}
+
+{% endfor %}
