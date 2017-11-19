@@ -81,15 +81,89 @@ html, body {
 	height: 95%;
 	display: block;
 	float: right;
+	position: relative;
 
 }
 .desktop-right .window{
 	position: relative;
-	left: 5px;
-	width: 95%;
+	left: 3%;
+	width: 94%;
 	height: 95%;
 	top: 2%;
 	display: block;
+}
+.desktop-right .window.small{
+	position: absolute;
+	left: 0%;
+	width: 60%;
+	height: 60%;
+	top: 0%;
+	float: left;
+	display: flex;
+	flex-direction: column;
+}
+
+.window-list{
+	background: white;
+	width: 100%;
+	margin: 0 auto;
+	overflow-y: scroll;
+	display: inline-block;
+	border-width: 2px;
+	border-style: ridge groove groove ridge;
+	border-color: #7f787f #fff8ff #fff8ff #7f787f;
+}
+.window-list.left{
+	width: 30%;
+	font-size: small;
+	padding-left: 6px;
+}
+
+.window-list.left .folder-list{
+	list-style: none;
+	padding:0;
+	background: transparent url(../images/icons/pixel-alt.png) repeat-y 15px 0;
+}
+.window-list.left .folder-list li{
+	padding: 0 0 0 2px;
+}
+.window-list.left .folder-list ul{
+	list-style: none;
+	padding:0;
+}
+.window-list.left .folder-list li ul li {
+	background: transparent url(../images/icons/pixel-alt.png) repeat-x 0 8px;
+	margin: 4px 0 4px 13px;
+	padding: 0 0 0 20px
+}
+.window-list.left .folder-list li a{
+	background: white;
+	display: block;
+	text-decoration: none;
+	color: #000000;
+}
+.window-list.right{
+	width: 67%;
+}
+.window-body{
+	background: #c0c0c0;
+	flex: auto;
+	display: flex;
+}
+
+.window-footer .left,.window-footer .right {
+	border: 1px solid;
+	border-color: #888888 #dadada #dadada #888888;
+	display: inline-block;
+	margin-left: 0.5%;
+	padding: 1px 1px;
+	font-size: xx-small;
+}
+.window-footer .left {
+	width: 33%;
+}
+.window-footer .right {
+	width: 64%;
 }
 .window .page-frame{
 	background: white;
@@ -170,8 +244,8 @@ html, body {
 .window-close-button {
 	display: inline-block !important;
 	float: right;
-	width: 13px;
-	height: 11px;
+	width: 15px;
+	height: 15px;
 }
 .window-close-button:before {
 	content: '×';

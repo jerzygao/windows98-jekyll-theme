@@ -1,0 +1,23 @@
+tags:
+  - title:  windows 98 (C:)
+    icon_url: images/icons/my-computer-16x16.png
+    child:
+     - title: 生活
+       icon_url: images/icons/favorites-16x16.png
+       category: life
+     - title: 读书
+       icon_url: images/icons/fonts-folder-16x16.png
+       category: bookes
+     - title: 观影
+       icon_url: images/icons/printers-folder-16x16.png
+       category: movies
+
+  - title:  Removable Disk (D:)
+    icon_url: images/icons/my-computer-16x16.png
+    child:
+     - title: 编程人生
+       icon_url: images/icons/programs-folder-16x16.png
+       category: coding
+     - title: 技术笔记
+       icon_url: images/icons/tools-folder-16x16.png
+       category: notes

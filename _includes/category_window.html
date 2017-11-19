@@ -1,0 +1,49 @@
+<div id="category_window" class="window small" touch-action="none" style="display: none;">
+    <div class="window-titlebar" touch-action="none">
+        <img class="icon" draggable="false" src="images/icons/find-folder-16x16.png">
+        <span class="window-title">Exploring - My blog</span>
+        <button class="window-close-button window-button button"></button>
+    </div>
+    <div class="menus" touch-action="none">
+        <div class="menu-container">
+            <div class="menu-button file-menu-button" tabindex="-1">
+                <a class="menu-button-link" href="/blog/index.html"> <span class="menu-hotkey">F</span>ile</a>
+            </div>
+        </div>
+        <div class="menu-container">
+            <div class="menu-button file-menu-button" tabindex="-1">
+                <a class="menu-button-link" href="/blog/index.html"> <span class="menu-hotkey">T</span>ools</a>
+            </div>
+        </div>
+        <div class="menu-container">
+            <div class="menu-button file-menu-button" tabindex="-1">
+                <a class="menu-button-link" href="/blog/index.html"> <span class="menu-hotkey">H</span>elp</a>
+            </div>
+        </div>
+    </div>
+    <div class="window-body">
+        <div class="window-list left">
+            <ul class="folder-list">
+                {% for tag in site.data.category.tags %}
+                    <li><a href="#"><img src="{{tag.icon_url}}"> {{tag.title}}</a>
+                        {% if tag.child %}
+                        <ul>
+                            {% for child in tag.child %}
+                                <li><a href="#" title="{{child.title}}"><img src="{{child.icon_url}}"> {{child.title}}</a></li>
+                            {% endfor %}
+                        </ul>    
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="window-list right">
+            <!-- <iframe allowfullscreen="" src="/blog/index.html" class="page-frame"> -->
+            </iframe>
+        </div> 
+    </div>
+    <div class="window-footer">
+        <div class="left">2 object(s)</div>
+        <div class="right">&nbsp;</div>
+    </div>
+</div>

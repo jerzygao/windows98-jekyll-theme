@@ -1,0 +1,32 @@
+
+- title: Categories
+  icon_url: images/icons/my-computer-32x32.png
+  window_id: category_window
+  window_page: category_window.html
+  task_button_id: category_window_task
+  task_button_title: Exploring - My blog
+  task_button_icon_url: images/icons/my-computer-16x16.png
+
+- title: About me
+  icon_url: images/icons/my-documents-folder-32x32.png
+  window_id: ~
+  window_page: ~
+  task_button_id: ~
+  task_button_title: ~
+  task_button_icon_url: images/icons/my-documents-folder-16x16.png
+
+- title: Internet Explorer
+  icon_url: images/icons/internet-explorer-32x32.png
+  window_page: ~
+  window_id: ~
+  task_button_id: ~
+  task_button_title: ~
+  task_button_icon_url: images/icons/internet-explorer-16x16.png
+
+- title: Blog.txt
+  icon_url: images/icons/doc-32x32.png
+  window_id: blog_window
+  window_page: blog_window.html
+  task_button_id: blog_window_task
+  task_button_title: Blog.txt - Notepad
+  task_button_icon_url: images/icons/notepad-16x16.png

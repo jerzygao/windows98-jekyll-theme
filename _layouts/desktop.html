@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>{{site.title}}</title>
+	<link href="css/layout.css" rel="stylesheet" type="text/css">
+	<link href="css/classic.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="images/icons/windows-update-16x16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="images/icons/windows-update-32x32.png" sizes="32x32" type="image/png">
+	<link rel="icon" href="images/icons/windows-update-48x48.png" sizes="48x48" type="image/png">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+
+<body>
+	<div class="desktop focused">
+		<div class="desktop-left">
+			{% for desktop_icon in site.data.desktop_icons %}
+			<div class="desktop-icon" draggable="true" window_id="{{desktop_icon.window_id}}" task_button_id="{{desktop_icon.task_button_id}}" task_button_title="{{desktop_icon.task_button_title}}" task_button_icon_url="{{desktop_icon.task_button_icon_url}}" >
+				<div class="icon-wrapper">
+					<img class="icon" draggable="false" src="{{desktop_icon.icon_url}}">
+					<img class="icon selection-effect" draggable="false" src="{{desktop_icon.icon_url}}">
+				</div>
+				<div class="title">{{desktop_icon.title}}</div>
+			</div>
+			{% endfor %}
+		</div>
+		<div class="desktop-right">
+			{% include category_window.html %}
+			{% include blog_window.html %}
+		</div>
+	</div>
+	<div class="taskbar">
+		<button class="start-button" title="Click here to begin.">
+			<img src="images/start.png" /><b>Start</b>
+		</button>
+		<div id="tasks" class="tasks">
+			<button id="blog_window_task" class="task button"><img class="icon" draggable="false" src="images/icons/notepad-16x16.png"><span class="title">Blog.txt - Notepad</span></button>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/init.js"></script>
+</body>
+
+</html>
