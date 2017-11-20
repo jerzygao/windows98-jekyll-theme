@@ -25,25 +25,30 @@
         <div class="window-list left">
             <ul class="folder-list">
                 {% for tag in site.data.category.tags %}
-                    <li><a href="#"><img src="{{tag.icon_url}}"> {{tag.title}}</a>
-                        {% if tag.child %}
-                        <ul>
-                            {% for child in tag.child %}
-                                <li><a href="/{{child.category}}" title="{{child.title}}"><img src="{{child.icon_url}}"> {{child.title}}</a></li>
-                            {% endfor %}
-                        </ul>    
-                        {% endif %}
-                    </li>
+                <li><a href="#"><img src="{{tag.icon_url}}"> {{tag.title}}</a>
+                    {% if tag.child %}
+                    <ul>
+                        {% for child in tag.child %}
+                        <li><a href="#" class="category_tag" category_name="{{child.category}}" title="{{child.title}}"><img src="{{child.icon_url}}"> {{child.title}}</a></li>
+                        {% endfor %}
+                    </ul>    
+                    {% endif %}
+                </li>
                 {% endfor %}
             </ul>
         </div>
         <div class="window-list right">
-            <iframe allowfullscreen="" src="/archives.html" class="page-frame">
-            </iframe>
+
+            <ul id="cat_post_list" class="folder-list file-list">
+                {% for post in site.posts %}
+                <li class="cat_post" category="{{ post.categories }}" ><a href="#" class="cat_post_ref" post_url="{{ post.url }}" title="{{ post.title }}"><img src="images/icons/notepad-file-16x16.png"><span class="cat_post_title"> {{ post.date | date_to_string }} {{ post.title }}</span></a></li>
+                {% endfor %}
+            </ul>
+
         </div> 
     </div>
     <div class="window-footer">
-        <div class="left">2 object(s)</div>
+        <div id="category_post_num" class="left"> {{site.posts | size}} object(s)</div>
         <div class="right">&nbsp;</div>
     </div>
 </div>

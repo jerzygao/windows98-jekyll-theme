@@ -142,9 +142,14 @@ html, body {
 	text-decoration: none;
 	color: #000000;
 }
+.file-list{
+	background: none;
+}
+.file-list li{
+	margin-top: 3px;
+}
 .window-list.right{
 	width: 67%;
-	overflow: hidden;
 }
 .window-body{
 	background: #c0c0c0;
@@ -171,10 +176,7 @@ html, body {
 	width: 99%;
 	height: 94%;
 }
-.file-list-content{
-	height: 100%;
-	overflow: scroll;
-}
+
 .desktop-icon {
 	display: table-row;
 	vertical-align: bottom; 

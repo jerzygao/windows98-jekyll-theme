@@ -17,7 +17,7 @@ paginate_path: "/blog/:num"
 
 excerpt_separator:  '<!-- more -->'
 
-gems: [jekyll-paginate, kramdown]
+plugins: [jekyll-paginate, kramdown]
 # Build settings
 # Markdown
 markdown: kramdown

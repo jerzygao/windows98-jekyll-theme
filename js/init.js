@@ -38,4 +38,23 @@
 		$(this).css("z-index","1");
 	});
 
+	$(".category_tag").click(function(){
+		$(".cat_post").hide();
+		var cat_post_show_selecter = "[category='category_name']";
+		cat_post_show_selecter = cat_post_show_selecter.replace("category_name",$(this).attr('category_name'));
+		var cat_post_show = $("#cat_post_list").find(cat_post_show_selecter);
+		cat_post_show.show();
+		$("#category_post_num").html(cat_post_show.length+" object(s)")
+	});
+
+	$(".cat_post_ref").dblclick(function(){
+		$("#blog_frame").attr('src',$(this).attr("post_url"));
+		$("#blog_window").click();
+	});
+
+	$(".cat_post_ref").click(function(){
+		$(".cat_post_title").removeClass("selected");
+		$(this).find(".cat_post_title").addClass("selected");
+	});
+
 })();

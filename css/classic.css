@@ -237,6 +237,11 @@ button:hover:active:before {
 	top: -2px;
 }
 
+.cat_post_title.selected{
+	background-color: #5372e2;
+	color: white;
+}
+
 * {
 	image-rendering: crisp-edges;
 	image-rendering: pixelated;
