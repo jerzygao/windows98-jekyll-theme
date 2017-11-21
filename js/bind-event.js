@@ -1,5 +1,9 @@
 
 (function(){
+	if(document.referrer){
+		$("#blog_frame").attr('src',document.referrer);
+	};
+
 	$(".window-close-button").click(function(){
 		var window = $(this).closest("div .window");
 		window.hide();

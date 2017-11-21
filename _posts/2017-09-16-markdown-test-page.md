@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post-common
 title: "Markdown Test Page"
 category: coding
 tags: tag1 tag3

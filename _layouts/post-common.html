@@ -4,6 +4,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+	<script src="/js/jquery.min.js"></script>
+	<script src="/blog/js/init.js"></script>
 	<link rel="stylesheet" href="/css/post.css">
 	<link rel="stylesheet" href="/css/layout.css">
 	<link rel="stylesheet" href="/css/classic.css">
@@ -49,7 +51,6 @@
 	</div>
 	</div>
 	
-	<script src="/js/jquery.min.js"></script>
 	<script src="/blog/js/code-line-num.js "></script>
-	<script src="/blog/js/init-postpage.js "></script>
+	<script src="/blog/js/bind-postpage-event.js "></script>
 </body>
