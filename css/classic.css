@@ -184,6 +184,13 @@ button.selected {
 	font-size: 16px;
 	height: 100%;
 }
+.window-content.black {
+	background-color: black;
+}
+.window-content.black p{
+	color: white;
+	font-size: smaller;
+}
 .start-menu,
 .ui-slider-handle,
 button {

@@ -20,6 +20,7 @@
 
 		if($(this).attr('window_id')){
 			var window = $("#"+$(this).attr('window_id'));
+			$(".window").css("z-index","0");
 			window.css("z-index","1");
 			window.show();
 		}

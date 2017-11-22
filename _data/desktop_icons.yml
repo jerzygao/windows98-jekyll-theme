@@ -8,12 +8,12 @@
   task_button_icon_url: images/icons/my-computer-16x16.png
 
 - title: About me
-  icon_url: images/icons/my-documents-folder-32x32.png
-  window_id: ~
-  window_page: ~
-  task_button_id: ~
-  task_button_title: ~
-  task_button_icon_url: images/icons/my-documents-folder-16x16.png
+  icon_url: images/icons/task-32x32.png
+  window_id: terminal_window
+  window_page: terminal_window.html
+  task_button_id: terminal_window_task
+  task_button_title: 命令提示符
+  task_button_icon_url: images/icons/task-16x16.png
 
 - title: Internet Explorer
   icon_url: images/icons/internet-explorer-32x32.png
